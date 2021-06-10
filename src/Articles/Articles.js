@@ -3,14 +3,15 @@ import tartine from "../toast.jpg"
 
 
 
-const articles = () => {
-    return (
+class Articles extends React.Component {
+  render(){
+        return (
       <Fragment>
         <div className="article">
+          <button onClick={() => console.log(this.props.titre)}>Where is Brian?</button>
           <div className="d-left">
             <img src={tartine} className="img-fluid"/>
           </div>
-
           <div className="d-right">
             <h1>Mon premier article</h1>
             <p>
@@ -20,6 +21,7 @@ const articles = () => {
         </div>
       </Fragment>
     );
+  }
 }
 
-export default articles
+export default Articles

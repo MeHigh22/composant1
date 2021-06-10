@@ -1,8 +1,11 @@
 import React from "react"
 import Article from "../Articles/Articles"
 
+
+
 class Body extends React.Component {
     nbArticles = 2;
+    
     render(){
         return(
             <section className="body">
@@ -10,8 +13,8 @@ class Body extends React.Component {
                     {
                         this.nbArticles >= 2 &&
                         <div>
-                            <Article/>
-                            <Article/>
+                            <Article titre="Les tartines"/>
+                            <Article titre="Coding School"/>
                         </div>
                     }
                     {
